@@ -1,5 +1,12 @@
 const express = require('express')
+const mongoose = require('mongoose')
+
+const linksRouter = require('./routes/links')
+
 const app = express()
+app.use(express.json())
+
+app.use('/api/links', linksRouter)
 
 app.get('/', (req, res) => {
     res.send('olá')
