@@ -1,0 +1,11 @@
+.status {
+    display: none;
+}
+
+.status-sucesso {
+    color: green;
+}
+
+.status-erro {
+    color: red;
+}

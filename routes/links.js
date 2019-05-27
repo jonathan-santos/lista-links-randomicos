@@ -33,13 +33,15 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     const link = new Link()
-    link.url = req.body.url
 
+    link.url = req.body.url
+    link.description = req.body.description
+        
     link.save(error => {
         if(error)
             res.send(500, error)
         
-        res.status(201).json(link)
+        res.status(203)
     })
 })
 

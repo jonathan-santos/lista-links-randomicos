@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista links randômicos</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <a href="/">Início</a>
+        <h1>Cadastre um novo link</h1>
+    </header>
+    
+    <main class="cadastrar-link">
+        <form autocomplete="off">
+            <p class='status'>STATUS: ???</p>
+
+            <div>
+                <label for="url">URL: </label>
+                <input name='url' id='url' type="text" class='dado' required>
+            </div>
+
+            <div>
+                <label for="descricao">Descrição: </label>
+                <textarea name="descricao" id="descricao" cols="30" rows="10" class='dado'></textarea>
+            </div>
+
+            <button type="submit">Salvar link</button>
+        </form>
+    </main>
+    
+    <script src="cadastrar-link.js"></script>
+</body>
+</html>
